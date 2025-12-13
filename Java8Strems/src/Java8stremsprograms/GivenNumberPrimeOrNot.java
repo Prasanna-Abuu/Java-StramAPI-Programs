@@ -2,7 +2,32 @@ package Java8stremsprograms;
 
 import java.util.stream.IntStream;
 
-public class GivenNumberPrimeOrNot {
+package com.io.program;
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in) ;
+		System.out.println("Enter a number");
+			int num = sc.nextInt();
+		 for (int i=2;i<num;i++) {
+			 if(num%i == 0) {
+				 System.out.println("Given Number Is not Prime Number");
+				 return;
+			 }
+		 }
+		 System.out.println("Given Number Is Prime Number");
+	}
+
+}
+
+
+
+//------------------------------------------------------------------
+
+
+/* public class GivenNumberPrimeOrNot {
     public static void main(String[] args) {
         int number = 6;
 
@@ -15,4 +40,5 @@ public class GivenNumberPrimeOrNot {
             System.out.println(number + " is not a prime number.");
         }
     }
-}
+} */
+
