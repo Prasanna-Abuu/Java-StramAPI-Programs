@@ -49,8 +49,34 @@ public class FrequencyOfElementsInArray {
 		  	
 		
 	}
+}
 
+//-----------------------------------------------
+
+/*import java.util.HashMap;
+
+public class FrequencyOfCharactersInString {
+
+    public static void main(String[] args) {
+
+        String str = "programming";
+        HashMap<Character, Integer> hashMap = new HashMap<>();
+
+        for (char ch : str.toCharArray()) {
+            if (hashMap.containsKey(ch)) {
+                hashMap.put(ch, hashMap.get(ch) + 1);
+            } else {
+                hashMap.put(ch, 1);
+            }
+        }
+
+        for (char key : hashMap.keySet()) {
+            System.out.println("Character : " + key);
+            System.out.println("Frequency : " + hashMap.get(key));
+        }
+    }
 }*/
+
 
 
 
