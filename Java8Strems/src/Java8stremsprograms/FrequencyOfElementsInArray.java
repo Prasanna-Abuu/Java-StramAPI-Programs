@@ -77,6 +77,36 @@ public class FrequencyOfCharactersInString {
     }
 }*/
 
+//---------------------------------
+
+package com.io.program;
+import java.util.*;
+public class FindTheFirstReptChar {
+	    public static void main(String[] args) {
+
+	        String str = "programming";
+	        HashMap<Character, Integer> hashMap = new HashMap<>();
+
+	        for (char ch : str.toCharArray()) {
+	            if (hashMap.containsKey(ch)) {
+	                hashMap.put(ch, hashMap.get(ch) + 1);
+	            } else {
+	                hashMap.put(ch, 1);
+	            }
+	        }
+
+	       /* for (char key : hashMap.keySet()) {
+	            System.out.println("Character : " + key);
+	            System.out.println("Frequency : " + hashMap.get(key));
+	        }*/
+	        
+	        for (Map.Entry<Character, Integer> entry : hashMap.entrySet()) {
+	            System.out.println("Character : " + entry.getKey());
+	            System.out.println("Frequency : " + entry.getValue());
+	        }
+	    }
+	}
+
 
 
 
